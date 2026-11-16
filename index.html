@@ -2,13 +2,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Change Calculator</title>
   </head>
   <body>
-    <!-- Write your markup here -->
+    <div class="calculator-container">
+    <h1>Change Calculator</h1>
+    <label for="amount-due">Sale Price:</label>
+    <input id="amount-due" type="number" step="0.01" placeholder="Sale Amount"/>
+    <label for="amount-received">Amount Received:</label>
+    <input id="amount-received" type="number" step="0.01" placeholder="Amount Received"/>
+    <button id="calculate-change">Calculate Change</button>
 
-    <!-- Don't forget to add your <script> tag here -->
+    <h2>Total Change Due</h2>
+    <output id="change-due"></output>
+    
+    <h3>Bills Due</h3>
+    <div class="change-row">
+      <span>Dollars:</span>
+      <p id="dollars-output">0</p>
+    </div>
+    
+    <h4>Change Due</h4>
+    <div class="change-row">
+      <span>Quarters:</span>
+      <p id="quarters-output">0</p>
+    </div>
+    <div class="change-row">
+      <span>Dimes:</span>
+      <p id="dimes-output">0</p>
+    </div>
+    <div class="change-row">
+      <span>Nickels:</span>
+      <p id="nickels-output">0</p>
+    </div>
+    <div class="change-row">
+      <span>Pennies:</span>
+      <p id="pennies-output">0</p>
+    </div>    
+    </div>
 
+   <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
